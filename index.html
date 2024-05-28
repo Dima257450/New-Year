@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-page cart-page-front">
+        <div class="card-page cart-page-outside"></div>
+        <div class="card-page cart-page-inside">
+            <span class="merry-christmas">
+            <img src="img/newyear.png">
+            </span>
+        </div>
+        </div>
+        <div class="card-page cart-page-bottom">
+        <h3 class="card-page__title">Поздравляю с Новым годом!</h3>
+        <div class="card-page__text">
+            <p>♡♡♡♡♡♡♡♡♡♡♡</p>
+            <p>Желаю что бы тебе во всём сопутствовала удача!</p>
+            <p>Здоровья, успехов, достатка и радости. Пусть все мечты исполнятся!</p>
+            <p>♡♡♡♡♡♡♡♡♡♡♡</p>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="snowstorm.js"></script>
+    <script>
+        $(document).ready(function() {
+
+        var $clickMe = $('.click-icon'),
+            $card = $('.card');
+
+        $card.on('click', function() {
+            $(this).toggleClass('is-opened');
+            $clickMe.toggleClass('is-hidden');
+        });
+
+        });
+
+    </script>
+</body>
+</html>
